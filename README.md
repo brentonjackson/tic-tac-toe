@@ -1,7 +1,7 @@
 # tic-tac-toe
 
-tic-tac-toe game in React
-[Try it out] (https://pensive-brahmagupta-d6741d.netlify.com/)
+tic-tac-toe game in React<br>
+[Try it out](https://pensive-brahmagupta-d6741d.netlify.com/)
 
 ## Background
 
