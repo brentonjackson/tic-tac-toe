@@ -8,9 +8,10 @@ Followed this [tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 Did this to further understand the inner workings of React.<br>
 When I first learned React, I ony used it to efficiently render "static" components,<br>
-as React would call them. I didn't know how to use state or when to
-use function components vs class components. I didn't even have a deep understanding
-of props. This tutorial did a great job of explaining those concepts.*
+as React would call them. I didn't know how to use state <br>
+or when to use function components vs class components.<br> 
+I didn't even have a deep understanding of props. This tutorial did a great job<br>
+of explaining those concepts.*
 
 
 
