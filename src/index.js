@@ -1,40 +1,58 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './index.css';
+import styled from 'styled-components'
 
-// class Square extends React.Component {
+// STYLES ===========================================================
+const Button = styled.button`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+  margin: 0 1em;
+  padding: 0.25em 1em;
+`
 
-//   render() {
-//     return (
-//       <button
-//         className="square"
-//         onClick= {() => this.props.onClick()}>
-//         {this.props.value}
-//       </button>
-//     );
-//   }
-// }
+const SquareButton = styled.button`
+  background: #fff;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+
+  &:focus {
+    outline: none;
+  }
+`
+
+const StatusDiv = styled.div`
+  
+  font-size: 20px;
+  font-weight: bold;
+  background: papayawhip;
+  border-radius: 5px;
+  
+`
+// Components =====================================================
 
 // function component since it doesn't have state
 function Square(props) {
     return (
-        <button className="square" onClick = {props.onClick}>
+        <SquareButton className="square" onClick = {props.onClick}>
         {props.value}
-        </button>
+        </SquareButton>
     );
 }
 
 class Board extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //       squares: Array(9).fill(null),
-  //       xIsNext: true,
-  //   }
-  // }
-
-
-
     renderSquare(i) {
         return(
             <Square
@@ -43,7 +61,6 @@ class Board extends React.Component {
             />
         );
     }
-
 
     render() {
         return (
@@ -112,7 +129,6 @@ class Game extends React.Component {
         })
     }
 
-
   render() {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
@@ -124,7 +140,7 @@ class Game extends React.Component {
             `Go to game start`;
         return (
             <li key={move}>
-                <button onClick={() => this.jumpTo(move)}> {desc} </button>
+                <Button onClick={() => this.jumpTo(move)}> {desc} </Button>
             </li>
         );
     });
@@ -136,8 +152,6 @@ class Game extends React.Component {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
-
-
     return (
       <div className="game">
         <div className="game-board">
@@ -146,7 +160,7 @@ class Game extends React.Component {
             onClick={(i) => this.handleClick(i)} />
         </div>
         <div className="game-info">
-          <div>{ status }</div>
+          <StatusDiv>{ status }</StatusDiv>
           <ol>{ moves }</ol>
         </div>
       </div>
