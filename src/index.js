@@ -11,6 +11,8 @@ const Button = styled.button`
   color: dodgerblue;
   margin: 0 1em;
   padding: 0.25em 1em;
+  font-family: Roboto;
+  font-size: 20px;
 
   &:focus {
     font-weight: bold;
@@ -22,15 +24,15 @@ const SquareButton = styled.button`
   border: 1px solid dodgerblue;
   color: dodgerblue;
   float: left;
-  font-size: 60px;
+  font-size: 65px;
   font-weight: bold;
   line-height: 34px;
-  height: 110px;
+  height: 150px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 110px;
+  width: 150px;
 
   &:focus {
     outline: none;
@@ -39,7 +41,7 @@ const SquareButton = styled.button`
 
 const StatusDiv = styled.div`
   
-  font-size: 20px;
+  font-size: 25px;
   // font-weight: bold;
   background: papayawhip;
   border-radius: 5px;

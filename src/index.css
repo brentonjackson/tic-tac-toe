@@ -1,5 +1,5 @@
 body {
-  font: 14px Montsterrat,"Century Gothic", Futura, sans-serif;
+  font: 14px Montserrat,"Century Gothic", Futura, sans-serif;
   margin: 20px;
 }
 
@@ -11,6 +11,7 @@ body {
 
 ol, ul {
   padding-left: 30px;
+  font-size: 20px;
 }
 
 li {
@@ -25,8 +26,8 @@ li {
 
 .title{
   text-align: center;
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 60px;
+  margin-bottom: 40px;
   font-weight: lighter;
 }
 
