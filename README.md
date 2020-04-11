@@ -1,6 +1,6 @@
 # tic-tac-toe
 
-![alt text](https://github.com/brentonjackson/tic-tac-toe/tictactoe.PNG "Game Screenshot")
+![alt text](https://github.com/brentonjackson/tic-tac-toe/blob/master/tictactoe.PNG "Game Screenshot")
 
 
 tic-tac-toe game in React<br>
