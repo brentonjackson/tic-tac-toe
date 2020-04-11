@@ -11,6 +11,10 @@ const Button = styled.button`
   color: dodgerblue;
   margin: 0 1em;
   padding: 0.25em 1em;
+
+  &:focus {
+    font-weight: bold;
+  }
 `
 
 const SquareButton = styled.button`
@@ -18,15 +22,15 @@ const SquareButton = styled.button`
   border: 1px solid dodgerblue;
   color: dodgerblue;
   float: left;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 34px;
-  height: 100px;
+  height: 110px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 100px;
+  width: 110px;
 
   &:focus {
     outline: none;
@@ -36,9 +40,10 @@ const SquareButton = styled.button`
 const StatusDiv = styled.div`
   
   font-size: 20px;
-  font-weight: bold;
+  // font-weight: bold;
   background: papayawhip;
   border-radius: 5px;
+  padding: 5px;
   
 `
 // Components =====================================================
@@ -147,12 +152,13 @@ class Game extends React.Component {
 
     let status;
     if (winner) {
-        status = `Winner: ${winner}!`;
+        status = `🎉🏆 Winner: ${winner}! 🏆🎉`;
     } else {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
     }
 
     return (
+      <div><div className="title">Tic Tac Toe!</div>
       <div className="game">
         <div className="game-board">
           <Board
@@ -163,6 +169,7 @@ class Game extends React.Component {
           <StatusDiv>{ status }</StatusDiv>
           <ol>{ moves }</ol>
         </div>
+      </div>
       </div>
     );
   }

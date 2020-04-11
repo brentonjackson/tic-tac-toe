@@ -23,6 +23,13 @@ li {
   display: table;
 }
 
+.title{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
 .status {
   margin-bottom: 10px;
 }
