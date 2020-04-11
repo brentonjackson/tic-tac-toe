@@ -1,10 +1,10 @@
 # tic-tac-toe
-
+[Try it out!](https://pensive-brahmagupta-d6741d.netlify.com/)
 ![alt text](https://github.com/brentonjackson/tic-tac-toe/blob/master/tictactoe.PNG "Game Screenshot")
 
 
 tic-tac-toe game in React<br>
-[Try it out](https://pensive-brahmagupta-d6741d.netlify.com/)
+
 
 ## Background
 
