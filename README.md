@@ -1,5 +1,8 @@
 # tic-tac-toe
 
+![alt text](https://github.com/brentonjackson/tic-tac-toe/tictactoe.png "Game Screenshot")
+
+
 tic-tac-toe game in React<br>
 [Try it out](https://pensive-brahmagupta-d6741d.netlify.com/)
 

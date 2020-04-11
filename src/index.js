@@ -9,7 +9,7 @@ const Button = styled.button`
   border-radius: 3px;
   border: 2px solid dodgerblue;
   color: dodgerblue;
-  margin: 0 1em;
+  margin: 0;
   padding: 0.25em 1em;
   font-family: Roboto;
   font-size: 20px;
