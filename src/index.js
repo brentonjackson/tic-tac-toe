@@ -15,8 +15,7 @@ const Button = styled.button`
   font-size: 20px;
 
   &:focus {
-    font-weight: bold;
-  }
+    border: 3.5px solid dodgerblue;
 `
 
 const SquareButton = styled.button`
