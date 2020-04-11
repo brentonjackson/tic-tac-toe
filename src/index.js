@@ -170,11 +170,11 @@ class Game extends React.Component {
       })
   }
 
-  sortHistory() {
-    this.setState({
-      isDescending: !this.state.isDescending
-    });
-  }
+  // sortHistory() {
+  //   this.setState({
+  //     isDescending: !this.state.isDescending
+  //   });
+  // }
 
   render() {
     const history = this.state.history;
@@ -216,14 +216,11 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <StatusDiv>{ status }</StatusDiv>
-          <ol>{ this.state.isDescending ? moves : moves.reverse() }</ol>
-          <Button onClick={() => this.sortHistory()}>
+          <ol>{moves}</ol>
+          {/*<ol>{ this.state.isDescending ? moves : moves.reverse() }</ol>*/}
+{/*          <Button onClick={() => this.sortHistory()}>
             Sort by: {this.state.isDescending ? "Descending" : "Asending"}
-          </Button>
-        </div>
-        <div>Wins:
-          <div>X: {1}</div>
-          <div>O: {0}</div>
+          </Button>*/}
         </div>
       </div>
       </div>
