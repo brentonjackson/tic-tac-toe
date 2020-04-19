@@ -3,6 +3,26 @@ body {
   margin: 20px;
 }
 
+/* body::after {
+  content: "";
+  background-image: url(flashvsquicksilver.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
+  opacity: 0.8;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+} */
+
 .container {
   display: flex;
   justify-content: center;

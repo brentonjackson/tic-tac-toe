@@ -3,6 +3,9 @@ import ReactDom from 'react-dom';
 import './index.css';
 import styled from 'styled-components'
 
+// ICONS ============================================================
+
+
 // STYLES ===========================================================
 const Button = styled.button`
   background: transparent;
