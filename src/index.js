@@ -15,6 +15,16 @@ const Button = styled.button`
   font-size: 20px;
   cursor: pointer;
 
+  @media (min-width: 375px) {
+    font-size: 25px;
+  }
+  @media (min-width: 750px) {
+    font-size: 50px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
+
 
   &:focus {
     border: 3.5px solid dodgerblue;
@@ -27,13 +37,32 @@ const SquareButton = styled.button`
   float: left;
   font-size: 65px;
   font-weight: bold;
-  line-height: 34px;
-  height: 150px;
+  height: 90px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 150px;
+  width: 90px;
+
+  @media (min-width: 375px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media (min-width: 413px) {
+    width: 120px;
+    height: 120px;
+  }
+  @media (min-width: 750px) {
+    width: 200px;
+    height: 200px;
+    font-size: 120px;
+    line-height: 34px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+  }
 
   &:focus {
     outline: none;
@@ -41,13 +70,25 @@ const SquareButton = styled.button`
 `
 
 const StatusDiv = styled.div`
-  
+
   font-size: 25px;
-  // font-weight: bold;
   background: papayawhip;
   border-radius: 5px;
-  padding: 5px;
-  
+  padding: 10px 1px;
+
+
+  @media (min-width: 375px) {
+    font-size: 30px;
+  }
+  @media (min-width: 750px) {
+    padding: 5px;
+    font-size: 60px;
+  }
+  @media (min-width: 1200px) {
+    padding: 5px;
+    font-size: 40px;
+  }
+
 `
 // Components =====================================================
 
@@ -191,7 +232,7 @@ class Game extends React.Component {
             </li>
         );
     });
-    
+
     let status;
     if (winner) {
         status = `🎉🏆 Winner: ${winner.player}! 🏆🎉`;
